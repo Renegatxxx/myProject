@@ -144,3 +144,56 @@
 		
 	}
 }
+
+
+.header__search{
+	// padding-top: 15px;
+	padding-bottom: 5px; //35px;
+}
+
+.header__date{
+	font-size: 72px;
+	line-height: 64px;
+	font-weight: 800;
+	span{
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 19px;
+		letter-spacing: 1.4px;
+		margin-bottom: 30px;
+		padding-top: 15px;
+		display: block;
+
+	}
+}
+
+
+.header__location{
+	display: inline-block;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 14px;
+	text-align: center;
+	letter-spacing: 1.05px;
+	position: relative;
+	padding-left: 19px;
+	text-transform: capitalize;
+	&::before{
+		content: "";
+		position: absolute;
+		width: 11px;
+		height: 13px;
+		background-image: url(../images/marker.svg);
+		top: 0;
+		left: 0;
+
+	}
+}
+
+
+.header__map{
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 3;
+}
